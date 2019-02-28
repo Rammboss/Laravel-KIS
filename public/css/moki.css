@@ -1,0 +1,258 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+#moki-navbar {
+    background-color:#222222;
+    width: 100%;
+    list-style-type: none;
+    position: fixed; /* Make it stick, even on scroll */
+    z-index: 9;
+}
+
+.navbar-brand span {
+    position: absolute;
+    bottom: 0;
+    color: #80ba24;
+    font-size: 18px;
+    text-align: center;
+    transition: .3s ease-in-out;
+    opacity: 0;
+}
+
+#moki-login {
+    background-color:#a4adb2;
+    color:#000000
+}
+
+#login-button:hover {
+    opacity: 0.8;
+
+}
+
+.vertical-center {
+    padding-top: 220px;
+}
+
+html {
+    font-size: 100%;
+}
+
+#sidebarButton {
+    height: 75px;
+    width: 75px;
+    background-color: #80ba24;
+    border-color: #80ba24;
+    margin-top: 10px;
+}
+
+#sidebarButton:focus,#sidebarButton:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+#sidebarButton:hover {
+    background-color: #a4adb2;
+    border-color: #a4adb2;
+}
+
+#sidebar ul{
+    list-style:none;
+}
+
+#sidebar {
+    width: 150px;
+    position: fixed;
+    padding-left: 75px;
+    z-index: 8;
+    top: 56%;
+    transform: translate(-50%,-50%);
+
+}
+
+#content {
+    width: calc(100% - 130px);
+    padding: 90px 0 0 40px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#patientButton {
+    height: 39px;
+    width: 40px;
+}
+
+figure:hover+span {
+    bottom: -36px;
+    opacity: 1;
+}
+
+#patient-header {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#patient-circle {
+    background-color: white;
+    color: white;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+#patient-qr-code {
+    width: 105px;
+    height: 105px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#patient-site {
+    left: 0;
+}
+
+#master-data-btn-success {
+    background-color: #80ba24;
+    border-color: #80ba24;
+}
+
+.dropdown-menu-right a .fa {
+    color: #80ba24;
+}
+
+a .fa {
+    color: #ffffff;
+}
+
+#anamnesis-forms {
+    color: #a4adb2;
+}
+
+#diagnosis-forms {
+    color: #a4adb2;
+    padding-top: 5%;
+}
+
+.modal {
+    margin: 0 auto;
+    top: 10%;
+}
+
+.modal-dialog {
+    max-width: 90%;
+}
+
+
+.card-icon {
+    position: absolute;
+    right: 20px;
+    top: 220px;
+}
+
+#carousel-example-2 {
+    position: absolute;
+    top: 11%;
+}
+
+.carousel {
+    transform: translate(0, 5%);
+    width: 95%;
+}
+
+.carousel-caption {
+    font-size: 20px !important;
+    bottom: 10%;
+}
+
+.carousel .carousel-indicators {
+    width: 70%;
+}
+
+.carousel .carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    text-indent: -999px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    background: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12), 0 1px 5px 0 rgba(0,0,0,.2);
+    border-radius: 2px;
+}
+
+.carousel .carousel-indicators .active{
+    margin: 11px 10px;
+}
+
+.carousel .carousel-indicators li {
+    margin: 11px 10px;
+}
+
+.carousel .carousel-indicators .active {
+    margin-top: 10px;
+    transform: scale(1.5);
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+}
+
+.carousel .carousel-control-next{
+    width: 5%;
+}
+
+.carousel .carousel-control-prev {
+    width: 5%;
+}
+
+/********************************/
+/*          Hero Headers        */
+/********************************/
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+    -webkit-transform: translate3d(-50%,-50%,0);
+    -moz-transform: translate3d(-50%,-50%,0);
+    -ms-transform: translate3d(-50%,-50%,0);
+    -o-transform: translate3d(-50%,-50%,0);
+    transform: translate3d(-50%,-50%,0);
+}
+.hero h1 {
+    font-size: 6em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.fade-carousel .carousel-inner .item .hero {
+    opacity: 0;
+    -webkit-transition: 2s all ease-in-out .1s;
+    -moz-transition: 2s all ease-in-out .1s;
+    -ms-transition: 2s all ease-in-out .1s;
+    -o-transition: 2s all ease-in-out .1s;
+    transition: 2s all ease-in-out .1s;
+}
+.fade-carousel .carousel-inner .item.active .hero {
+    opacity: 1;
+    -webkit-transition: 2s all ease-in-out .1s;
+    -moz-transition: 2s all ease-in-out .1s;
+    -ms-transition: 2s all ease-in-out .1s;
+    -o-transition: 2s all ease-in-out .1s;
+    transition: 2s all ease-in-out .1s;
+}
+
+/********************************/
+/*          Media Queries       */
+/********************************/
+@media screen and (min-width: 980px){
+    .hero { width: 980px; }
+}
+@media screen and (max-width: 640px){
+    .hero h1 { font-size: 4em; }
+}
